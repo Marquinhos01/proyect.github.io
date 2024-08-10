@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="f.png">
+    <title>Formulario</title>
+</head>
+<body>
+    <main id="container_form">
+        <form action="" id="form">
+            <fieldset id="form_personal_information">
+                <legend id="title_form_personal_information">información personal</legend>
+                <div class="first_part_form_personal_information">
+                    <label class="label_name_input"><span>nombre</span><input type="text" placeholder="name" class="capitalize"></label>
+                    <label class="label_surname_input"><span>apellido</span><input type="text" placeholder="apellido" class="capitalize"></label>
+                    <label class="label_age_input"><span>edad</span><input type="number" placeholder="edad"></label>
+                </div>
+                <div class="second_part_form_personal_information">
+                    <label class="label_extra_input"><span>extra</span><textarea placeholder="mas información..." rows="9"></textarea></label>
+                </div>
+            </fieldset>
+            <fieldset id="contact_information">
+                <legend id="title_form_contact_information">contacto</legend>
+                <label class="label_email_input"><span>email</span><input type="text" placeholder="edgar@gmail.com"></label>
+                <label class="label_cellphone_numer_input"><span>numero de celular</span><input type="number" placeholder="09#####38"></label>
+                <label class="label_city_datalist">
+                    <span>recidencia</span>
+                    <input list="city_datalist_contact" placeholder="ciudad">
+                    <datalist id="city_datalist_contact">
+                        <option value="Montevideo">capital de <span>uruguay</span></option>
+                        <option value="Artigas">ubicado al norte de <span>uruguay</span></option>
+                        <option value="Buenos Aires">es la capital de <span>argentina</span></option>
+                    </datalist>
+                </label>
+            </fieldset>
+        </form>
+        <div id="container_button_send">
+            <button id="button_send">send</button>
+        </div>
+    </main>
+</body>
+</html>
